@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="PerInfoHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="259"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61H-ne-qrm">
+                        <rect key="frame" x="107" y="76.5" width="107" height="107"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="61H-ne-qrm" secondAttribute="height" multiplier="1:1" id="y1Y-tE-f1l"/>
+                        </constraints>
+                        <state key="normal" image="相机.png"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0TN-gi-1V7">
+                        <rect key="frame" x="16" y="258" width="288" height="1"/>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="aaB-Th-QlN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="61H-ne-qrm" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1/3" id="5Bm-QR-xei"/>
+                    <constraint firstItem="61H-ne-qrm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="70j-zb-SlL"/>
+                    <constraint firstAttribute="trailing" secondItem="0TN-gi-1V7" secondAttribute="trailing" constant="16" id="STx-U3-QBq"/>
+                    <constraint firstItem="0TN-gi-1V7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="auP-Oy-UJG"/>
+                    <constraint firstAttribute="bottom" secondItem="0TN-gi-1V7" secondAttribute="bottom" id="cz4-7D-YCZ"/>
+                    <constraint firstItem="61H-ne-qrm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wtk-Bd-QcR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="headerImageBtn" destination="61H-ne-qrm" id="LSf-PH-gEU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="相机.png" width="92" height="93"/>
+    </resources>
+</document>

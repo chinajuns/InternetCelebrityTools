@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  网红评估工具
+//
+//  Created by More on 16/9/28.
+//  Copyright © 2016年 More. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define  SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define  SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+
+#define DEF_PERSISTENT_GET_OBJECT(key) [[NSUserDefaults standardUserDefaults] objectForKey:key]
+#define DEF_PERSISTENT_SET_OBJECT(object,key)     [[NSUserDefaults standardUserDefaults] setObject:object forKey:key]
+
+#define kScreenWidthRatio  (SCREEN_WIDTH / 750.0)
+#define kScreenHeightRatio (SCREEN_HEIGHT / 1334.0)
+#define AdaptedWidthValue(x)  (ceilf((x) * kScreenWidthRatio))
+#define AdaptedHeightValue(x) (ceilf((x) * kScreenHeightRatio))
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "UIViewController+CustomCatagory.h"
+#import "UIButton+TitleAndImage.h"
+#import "UIColor+Custom.h"
+#import "UMShare.h"
+#import "BaseNetWork.h"
+#import "JSONAPI.h"
+#import "UIImageView+WebCache.h"
+#import "Masonry.h"
+static  NSString * BaseUrl = @"http://apihot.moreyoung.cc/index.php?r=";
+
+//static  NSString * BaseUrl = @"http://192.168.10.111/hot/api/web/index.php?r=";
+#import "SVProgressHUD.h"
+#import "MYObjectToNsDictionary.h"
+#import "MJRefresh.h"
+#import "MYBaseInfo.h"
+
+#import "AuthorizationOBJ.h"
+
+
+#import<AVFoundation/AVCaptureDevice.h>
+#import <AVFoundation/AVMediaFormat.h>
+#import<AssetsLibrary/AssetsLibrary.h>
+#import<CoreLocation/CoreLocation.h>
+#import "AuthorizationOBJ.h"
+#import <Photos/Photos.h>
+#import "UIView+CurrentController.h"
+#import "WMZUIalertVC.h"
+#import "UILabel+LabelHeightAndWidth.h"
+#import "UMMobClick/MobClick.h"
+#import "WebViewController.h"
+#import "UITabBar+badge.h"
+#endif /* PrefixHeader_pch */

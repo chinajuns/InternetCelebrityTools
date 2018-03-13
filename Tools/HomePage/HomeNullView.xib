@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeNullView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="315"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAH-E9-2sQ">
+                    <rect key="frame" x="94" y="229" width="187" height="40"/>
+                    <color key="backgroundColor" red="0.74901960784313726" green="0.33333333333333331" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jzl-0b-myM"/>
+                    </constraints>
+                    <state key="normal" title="我 要 估 值"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上次刷新时间：2016-09-23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UA-Jo-Xax">
+                    <rect key="frame" x="92" y="277" width="192" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CM6-ff-TXp">
+                    <rect key="frame" x="0.0" y="305" width="375" height="10"/>
+                    <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="RWp-o3-1QY"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="哭脸.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rtq-Kd-X1k">
+                    <rect key="frame" x="144" y="20.5" width="87" height="87"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="看看您的排名如何" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msk-su-oc0">
+                    <rect key="frame" x="138" y="202.5" width="98.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赶快完善您的信息吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAz-cs-mn3">
+                    <rect key="frame" x="132" y="171.5" width="110.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂时还没有获取到你的信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUt-Vy-oqd">
+                    <rect key="frame" x="114" y="141.5" width="147.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlA-E1-bP7">
+                    <rect key="frame" x="164" y="115.5" width="46" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.51764705879999995" green="0.51764705879999995" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="msk-su-oc0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8wK-du-aag"/>
+                <constraint firstItem="Rtq-Kd-X1k" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Fc-nr-dRT"/>
+                <constraint firstItem="OUt-Vy-oqd" firstAttribute="top" secondItem="LlA-E1-bP7" secondAttribute="bottom" constant="8" id="AAO-jP-Bav"/>
+                <constraint firstItem="fAH-E9-2sQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EXs-Xh-NSY"/>
+                <constraint firstAttribute="bottom" secondItem="CM6-ff-TXp" secondAttribute="bottom" id="QWe-Uj-L1j"/>
+                <constraint firstItem="9UA-Jo-Xax" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TOi-tf-sR0"/>
+                <constraint firstItem="qAz-cs-mn3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cIz-wq-mUR"/>
+                <constraint firstItem="LlA-E1-bP7" firstAttribute="top" secondItem="Rtq-Kd-X1k" secondAttribute="bottom" constant="8" id="gFP-hf-Jzm"/>
+                <constraint firstAttribute="bottom" secondItem="9UA-Jo-Xax" secondAttribute="bottom" constant="20" id="iaF-1g-h74"/>
+                <constraint firstAttribute="trailing" secondItem="CM6-ff-TXp" secondAttribute="trailing" id="kdC-s3-WYH"/>
+                <constraint firstItem="OUt-Vy-oqd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lhr-vH-o6Y"/>
+                <constraint firstItem="9UA-Jo-Xax" firstAttribute="top" secondItem="fAH-E9-2sQ" secondAttribute="bottom" constant="8" id="ouv-in-IXY"/>
+                <constraint firstItem="qAz-cs-mn3" firstAttribute="top" secondItem="OUt-Vy-oqd" secondAttribute="bottom" constant="16" id="q08-jg-wj1"/>
+                <constraint firstItem="CM6-ff-TXp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ufa-z5-Rq0"/>
+                <constraint firstItem="LlA-E1-bP7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ul5-E0-Jt1"/>
+                <constraint firstItem="msk-su-oc0" firstAttribute="top" secondItem="qAz-cs-mn3" secondAttribute="bottom" constant="16" id="xd0-1h-Lhx"/>
+                <constraint firstItem="fAH-E9-2sQ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1/2" id="yp5-O6-Nej"/>
+                <constraint firstItem="OUt-Vy-oqd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-8" id="zKr-OA-Bwr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lastRefTime" destination="9UA-Jo-Xax" id="Oir-ZN-34P"/>
+                <outlet property="refBtn" destination="fAH-E9-2sQ" id="w1r-Bk-aw2"/>
+                <outlet property="top1" destination="ouv-in-IXY" id="7Mq-SX-BaU"/>
+                <outlet property="top3" destination="xd0-1h-Lhx" id="dwU-eE-Nhb"/>
+                <outlet property="top4" destination="q08-jg-wj1" id="34g-83-ZU4"/>
+                <outlet property="top5" destination="AAO-jP-Bav" id="miZ-pI-5ab"/>
+                <outlet property="top6" destination="gFP-hf-Jzm" id="ng0-DE-4la"/>
+            </connections>
+            <point key="canvasLocation" x="51.5" y="89"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="哭脸.png" width="87" height="87"/>
+    </resources>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqs-jM-7br">
+                    <rect key="frame" x="201" y="569" width="48" height="48"/>
+                    <state key="normal" image="M微信.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareToWX" destination="iN0-l3-epB" eventType="touchUpInside" id="vbK-qy-sob"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPr-Q8-yGg">
+                    <rect key="frame" x="276" y="569" width="48" height="48"/>
+                    <state key="normal" image="MFQQ.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareToQQ" destination="iN0-l3-epB" eventType="touchUpInside" id="CgH-xM-Rap"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHr-Yy-TSe">
+                    <rect key="frame" x="51" y="569" width="48" height="48"/>
+                    <state key="normal" image="M新浪.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareToSina" destination="iN0-l3-epB" eventType="touchUpInside" id="h4w-nK-ent"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgD-4G-oko">
+                    <rect key="frame" x="161.5" y="516.5" width="52" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORf-yf-lvz">
+                    <rect key="frame" x="126" y="569" width="48" height="48"/>
+                    <state key="normal" image="M朋友圈.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareToWf" destination="iN0-l3-epB" eventType="touchUpInside" id="pU1-I3-qmm"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gV-Qa-1Rt">
+                    <rect key="frame" x="278.5" y="625" width="43.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Tt-WG-8eN">
+                    <rect key="frame" x="200.5" y="625" width="49.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsi-K9-PMv">
+                    <rect key="frame" x="131.5" y="625" width="37" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新浪微博" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVh-Xl-yCQ">
+                    <rect key="frame" x="50.5" y="625" width="49.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4gV-Qa-1Rt" firstAttribute="top" secondItem="JPr-Q8-yGg" secondAttribute="bottom" constant="8" id="6Rs-KP-p28"/>
+                <constraint firstItem="ORf-yf-lvz" firstAttribute="centerY" secondItem="bqs-jM-7br" secondAttribute="centerY" id="GeR-fe-DoR"/>
+                <constraint firstItem="4gV-Qa-1Rt" firstAttribute="centerX" secondItem="JPr-Q8-yGg" secondAttribute="centerX" id="Iwq-af-nrq"/>
+                <constraint firstItem="tHr-Yy-TSe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="2/5" id="Ome-K0-sAc"/>
+                <constraint firstItem="bqs-jM-7br" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="6/5" id="PNZ-Qc-kKA"/>
+                <constraint firstItem="OVh-Xl-yCQ" firstAttribute="top" secondItem="tHr-Yy-TSe" secondAttribute="bottom" constant="8" id="RBs-ar-1im"/>
+                <constraint firstItem="6Tt-WG-8eN" firstAttribute="centerX" secondItem="bqs-jM-7br" secondAttribute="centerX" id="SJi-Fw-CRg"/>
+                <constraint firstItem="jsi-K9-PMv" firstAttribute="centerX" secondItem="ORf-yf-lvz" secondAttribute="centerX" id="Vxb-zH-olw"/>
+                <constraint firstItem="6Tt-WG-8eN" firstAttribute="top" secondItem="bqs-jM-7br" secondAttribute="bottom" constant="8" id="Yp7-EI-bI9"/>
+                <constraint firstItem="JPr-Q8-yGg" firstAttribute="centerY" secondItem="bqs-jM-7br" secondAttribute="centerY" id="ZN1-dz-J3z"/>
+                <constraint firstItem="JPr-Q8-yGg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="8/5" id="ako-Em-U7a"/>
+                <constraint firstItem="tHr-Yy-TSe" firstAttribute="centerY" secondItem="bqs-jM-7br" secondAttribute="centerY" id="fpd-mo-Dvm"/>
+                <constraint firstAttribute="bottom" secondItem="bqs-jM-7br" secondAttribute="bottom" constant="50" id="iqU-Kh-a9B"/>
+                <constraint firstItem="jsi-K9-PMv" firstAttribute="top" secondItem="ORf-yf-lvz" secondAttribute="bottom" constant="8" id="jae-ak-i47"/>
+                <constraint firstItem="ORf-yf-lvz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" multiplier="4/5" id="kTO-tz-dzc"/>
+                <constraint firstItem="OVh-Xl-yCQ" firstAttribute="centerX" secondItem="tHr-Yy-TSe" secondAttribute="centerX" id="o5Q-xd-YIv"/>
+                <constraint firstItem="bqs-jM-7br" firstAttribute="top" secondItem="pgD-4G-oko" secondAttribute="bottom" constant="32" id="rZz-xF-Mvy"/>
+                <constraint firstItem="pgD-4G-oko" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="s3w-hQ-3WG"/>
+            </constraints>
+            <point key="canvasLocation" x="48.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MFQQ.png" width="48" height="48"/>
+        <image name="M微信.png" width="48" height="48"/>
+        <image name="M新浪.png" width="48" height="48"/>
+        <image name="M朋友圈.png" width="48" height="48"/>
+    </resources>
+</document>

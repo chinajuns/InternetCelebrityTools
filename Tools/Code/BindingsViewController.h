@@ -1,0 +1,21 @@
+//
+//  BindingsViewController.h
+//  网红评估工具
+//
+//  Created by More on 16/9/29.
+//  Copyright © 2016年 More. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <UMSocialCore/UMSocialCore.h>
+
+@interface BindingsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumberText;
+@property (weak, nonatomic) IBOutlet UITextField *codeText;
+@property (weak, nonatomic) IBOutlet UIButton *getCodeBtn;
+@property(strong,nonatomic)NSString *openID;
+@property(strong,nonatomic)NSString *platform;
+
+@property(nonatomic,strong)UMSocialUserInfoResponse *userinfo;
+@end
+
